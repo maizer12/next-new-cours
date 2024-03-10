@@ -1,0 +1,5 @@
+.sidebar {
+	@apply flex flex-col justify-between items-center border-r-2 py-5;
+	border-color: rgba(#fff, 0.3);
+	min-height: 100vh;
+}
