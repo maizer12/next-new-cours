@@ -6,11 +6,13 @@ interface IProps {
 	children: ReactNode;
 }
 
+const isLoading = false;
+
 export default function LayoutClient({ children }: IProps) {
 	return (
 		<main className={styles.main}>
-			<Sidebar />
-			<section>{children}</section>
+			{isLoading && <Sidebar />}
+			{children}
 		</main>
 	);
 }
