@@ -1,0 +1,17 @@
+.page {
+	@apply flex justify-center items-center h-full
+	w-full;
+	min-height: 100vh;
+
+	form {
+		@apply border border-border flex flex-col p-8 min-w-[370px];
+	}
+
+	.title {
+		@apply text-white text-3xl mb-8 text-pretty text-center;
+	}
+
+	button {
+		@apply mt-5;
+	}
+}

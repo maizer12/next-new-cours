@@ -5,8 +5,9 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
+				primary: '#6702b9',
 				white: '#efeff3',
-				border: 'rgba(#fff, 0.3)',
+				border: 'rgba(255, 255, 255, 0.3)',
 			},
 			padding: {
 				layout: '1.25rem',

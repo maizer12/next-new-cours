@@ -9,9 +9,11 @@ interface IProps {
 const isLoading = false;
 
 export default function LayoutClient({ children }: IProps) {
+	if (!isLoading) return <main>{children}</main>;
+
 	return (
 		<main className={styles.main}>
-			{isLoading && <Sidebar />}
+			<Sidebar />
 			{children}
 		</main>
 	);

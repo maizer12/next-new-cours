@@ -1,0 +1,32 @@
+.label {
+	.label-inner {
+		@apply w-full relative;
+	}
+
+	input {
+		@apply w-full pl-10 p-2 block border border-border;
+		background: none;
+
+		&::placeholder {
+			@apply duration-700;
+		}
+	}
+
+	&:focus-within {
+		svg {
+			@apply text-white;
+		}
+
+		input::placeholder {
+			@apply opacity-0;
+		}
+	}
+
+	svg {
+		@apply absolute top-[50%] left-2 translate-y-[-50%] text-border duration-300;
+	}
+
+	.err {
+		@apply text-rose-600 mt-1;
+	}
+}
